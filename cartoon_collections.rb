@@ -22,7 +22,9 @@ end
 
 def find_the_cheese(string)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  if string.include?(cheese_types)
-    string.detect(cheese_types).join
+  i = 0 
+  while i < string.length
+    string[i].include?(cheese_types)
+      return string[i].join
   end
 end
