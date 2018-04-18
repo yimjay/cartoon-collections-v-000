@@ -23,7 +23,7 @@ end
 def find_the_cheese(ingredients)
   cheese_types = ["cheddar", "gouda", "camembert"]
   ingredients.each do |word|
-    if word.include?(cheese_types)
+    if cheese_types.include?(word)
       word
     end
   end
