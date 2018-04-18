@@ -20,7 +20,9 @@ def long_planeteer_calls(calls)
   state
 end
 
-def find_the_cheese(string)
+def find_the_cheese(ingredients)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  string.find {|word| string.include?(word)}
+  ingredients.each do |word|
+    word.include?(cheese_types) ? word : nil
+  end
 end
