@@ -24,7 +24,7 @@ def find_the_cheese(string)
   cheese_types = ["cheddar", "gouda", "camembert"]
   i = 0 
   while i < string.length
-    string[i].include?(cheese_types) ? string[i] : nil
+    string[i].include?(cheese_types) ? string[i].join : nil
     i += 1
   end
 end
