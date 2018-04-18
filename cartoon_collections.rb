@@ -6,12 +6,12 @@ def roll_call_dwarves(names)
   puts list
 end
 
-def summon_captain_planet(calls)
-  calls.map { |planet| planet.capitalize + "!"}
+def summon_captain_planet(planet_calls)
+  planet_calls.map { |planet| planet.capitalize + "!"}
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(calls)
+  calls.any?()
 end
 
 def find_the_cheese# code an argument here
