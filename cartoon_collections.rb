@@ -22,11 +22,5 @@ end
 
 def find_the_cheese(string)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  i = 0 
-  while i < string.length
-    if string[i].include?(cheese_types)
-      return string[i].join("")
-    end
-    i += 1
-  end
+  string[i].include?(cheese_types).first
 end
