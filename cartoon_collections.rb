@@ -11,6 +11,7 @@ def summon_captain_planet(planet_calls)
 end
 
 def long_planeteer_calls(calls)
+  state = false
   calls.each do |call|
     if call.length > 4
       state = true
@@ -19,7 +20,7 @@ def long_planeteer_calls(calls)
   state
 end
 
-def find_the_cheese# code an argument here
-  # the array below is here to help
+def find_the_cheese(string)
   cheese_types = ["cheddar", "gouda", "camembert"]
+  string.join(" ").detect(cheese_types)
 end
