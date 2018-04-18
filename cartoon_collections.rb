@@ -13,7 +13,7 @@ end
 def long_planeteer_calls(calls)
   state = true
   calls.each do |call|
-    if call.length > 4
+    if call.split.length > 4
       state = false
     end
   end
