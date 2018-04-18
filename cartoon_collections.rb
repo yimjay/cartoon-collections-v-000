@@ -11,10 +11,10 @@ def summon_captain_planet(planet_calls)
 end
 
 def long_planeteer_calls(calls)
-  state = true
+  state = false
   calls.each do |call|
-    if call.split.length > 4
-      state = false
+    if call.length > 4
+      state = true
     end
   end
   state
